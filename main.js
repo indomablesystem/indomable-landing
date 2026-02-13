@@ -283,10 +283,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Energy Ball Logic (Hero Section Only)
+    // Interaction Guard (Disable certain effects on touch devices)
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    // Energy Ball Logic (Hero Section Only, Mouse Devices Only)
     const energyBall = document.getElementById('energy-ball');
     const heroSection = document.querySelector('.hero-section');
-    if (energyBall && heroSection) {
+    if (energyBall && heroSection && !isTouchDevice) {
         heroSection.onmousemove = (e) => {
             energyBall.style.opacity = '1';
             energyBall.style.left = `${e.clientX - 100}px`;
@@ -295,11 +298,13 @@ document.addEventListener('DOMContentLoaded', () => {
         heroSection.onmouseleave = () => {
             energyBall.style.opacity = '0';
         };
+    } else if (energyBall) {
+        energyBall.style.display = 'none'; // Ensure it's hidden on mobile
     }
 
-    // Pricing Card Mouse Follow
+    // Pricing Card Mouse Follow (Mouse Devices Only)
     const pricingCard = document.querySelector('.pricing-card.premium');
-    if (pricingCard) {
+    if (pricingCard && !isTouchDevice) {
         pricingCard.onmousemove = (e) => {
             const rect = pricingCard.getBoundingClientRect();
             const x = e.clientX - rect.left;
