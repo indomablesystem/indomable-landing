@@ -885,3 +885,4 @@ body {
         padding: 40px 20px;
     }
 }
+@media (max-width: 768px) { .hero-image-container { display: none !important; } }
