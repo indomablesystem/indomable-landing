@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indomable | Comercial IA 24/7 (2026)</title>
+    <meta name="description"
+        content="Automatización comercial 24/7 impulsada por IA. Capturamos, filtramos y cerramos tus reuniones sin intervención humana. Revolución IA 2026.">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+    <header class="sticky-header">
+        <div class="container flex-row jc-between ai-center">
+            <div class="logo">iNDOMABLE</div>
+            <nav class="desktop-nav">
+                <a href="#problema" data-i18n="nav-problem">El Problema</a>
+                <a href="#success" data-i18n="nav-success">Casos de Éxito</a>
+                <a href="#proceso" data-i18n="nav-how">Cómo funciona</a>
+                <a href="#precios" data-i18n="nav-pricing">Precios</a>
+            </nav>
+            <div class="header-actions flex-row ai-center">
+                <button id="theme-toggle" title="Cambiar tema">🌓</button>
+                <button id="lang-switch" class="btn btn-outline compact">EN / ES</button>
+                <button class="btn btn-primary compact open-form" data-i18n="nav-cta">Calcula ROI</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div id="energy-ball" class="energy-ball"></div>
+            <div class="container text-center">
+                <div class="badge-revolucion" data-i18n="hero-badge">REVOLUCIÓN IA 2026</div>
+                <h1 class="hero-title" data-i18n="hero-title">Vende mientras <span class="text-gradient">duermes</span>.
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Automatización comercial 24/7 impulsada por IA.
+                    Capturamos, filtramos y cerramos tus reuniones sin intervención humana.</p>
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary large open-form" data-i18n="hero-cta-start">Empieza Ahora</button>
+                    <a href="#proceso" class="btn btn-secondary large" data-i18n="hero-cta-process">Ver Proceso</a>
+                </div>
+                <div class="hero-image-container">
+                    <!-- The generated image will be placed here -->
+                    <div id="ai-hero-image" class="hero-visual-premium"></div>
+                    <div class="ai-status-badge">
+                        <span class="pulse"></span> Comercial IA: <strong data-i18n="status-active">Activo</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM SECTION (PAS) -->
+        <section id="problema" class="problem-section">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="problem-title">¿Tu equipo comercial no da abasto?</h2>
+                <p class="section-subtitle text-center" data-i18n="problem-subtitle">El costo de la inmediatez es la
+                    diferencia entre cerrar una reunión o perder un cliente para siempre.</p>
+
+                <div class="grid grid-3">
+                    <div class="glass-card">
+                        <div class="card-icon">❄️</div>
+                        <h3 data-i18n="problem-card1-h">El 80% se enfría</h3>
+                        <p data-i18n="problem-card1-p">Si no respondes a un lead en los primeros 5 minutos, la
+                            probabilidad de conversión cae drásticamente.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">💸</div>
+                        <h3 data-i18n="problem-card2-h">Fuga de Presupuesto</h3>
+                        <p data-i18n="problem-card2-p">Inviertes miles en Ads para que leads sin filtrar queden
+                            olvidados en una hoja de Excel.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">🤖</div>
+                        <h3 data-i18n="problem-card3-h">Omnipresencia IA</h3>
+                        <p data-i18n="problem-card3-p">Indomable nunca duerme. Responde instantáneamente y califica
+                            leads las 24 horas del día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [NEW] AI VS HUMAN COMPARISON -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="compare-title">El fin de la era manual</h2>
+                <div class="grid grid-2">
+                    <div class="comparison-card manual">
+                        <div class="card-status status-bad" data-i18n="compare-manual-status">MÉTODO TRADICIONAL</div>
+                        <h3>El Comercial Humano</h3>
+                        <ul>
+                            <li data-i18n="manual-f1">Duerme 8 horas al día.</li>
+                            <li data-i18n="manual-f2">Pierde el 80% de leads por tardanza.</li>
+                            <li data-i18n="manual-f3">Tiene días malos, estrés y fatiga.</li>
+                            <li data-i18n="manual-f4">Cuesta miles en nóminas y seguros.</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card ai-powered">
+                        <div class="card-status status-good" data-i18n="compare-ai-status">SISTEMA iNDOMABLE</div>
+                        <h3>Tu Agente iNDOMABLE</h3>
+                        <ul>
+                            <li data-i18n="ai-f1">Vende 24/7 sin descanso.</li>
+                            <li data-i18n="ai-f2">Respuesta en < 10 segundos.</li>
+                            <li data-i18n="ai-f3">Consistencia perfecta en cada chat.</li>
+                            <li data-i18n="ai-f4">Fracción del costo de un sueldo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [NEW] GLOBAL PULSE (STATS) -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="val-leads">8,432</div>
+                        <div class="stat-label" data-i18n="stat-leads">Leads Filtrados hoy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="val-meetings">214</div>
+                        <div class="stat-label" data-i18n="stat-meetings">Reuniones Agendadas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="val-uptime">100%</div>
+                        <div class="stat-label" data-i18n="stat-uptime">Uptime del Comercial</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS CASES (TICKER) -->
+        <section id="success" class="success-section">
+            <div class="container text-center">
+                <h2 class="section-title" data-i18n="success-title">Empresas que ya escalan con nosotros</h2>
+                <div class="success-carousel">
+                    <div class="success-track">
+                        <div class="success-item">Hotel la carreta</div>
+                        <div class="success-item">Megazulejo</div>
+                        <div class="success-item">DZ Autoimport</div>
+                        <div class="success-item">Mandarinawebs</div>
+                        <div class="success-item">Adelgar</div>
+                        <div class="success-item">Insight esp</div>
+                        <div class="success-item">Tus asesores financieros</div>
+                        <div class="success-item">Olivers Beer</div>
+                        <!-- Duplicated for infinite effect -->
+                        <div class="success-item">Hotel la carreta</div>
+                        <div class="success-item">Megazulejo</div>
+                        <div class="success-item">DZ Autoimport</div>
+                        <div class="success-item">Mandarinawebs</div>
+                        <div class="success-item">Adelgar</div>
+                        <div class="success-item">Insight esp</div>
+                        <div class="success-item">Tus asesores financieros</div>
+                        <div class="success-item">Olivers Beer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION (5 STEPS) -->
+        <section id="proceso" class="process-section">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="process-title">El Camino a la Autonomía</h2>
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step1-h">Estudio de Mercado</h3>
+                            <p data-i18n="step1-p">Analizamos tu nicho y competencia para encontrar el ángulo de venta
+                                más agresivo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step2-h">Creación de Contenido Multimedia</h3>
+                            <p data-i18n="step2-p">Diseñamos contenido multimedia para conseguir clientes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step3-h">Campañas de Meta Ads</h3>
+                            <p data-i18n="step3-p">Configuramos campañas de alta precisión para atraer tráfico
+                                cualificado desde el día 1.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step4-h">Formulario Inteligente</h3>
+                            <p data-i18n="step4-p">Formularios inteligentes que adaptan sus preguntas según las
+                                respuestas del usuario.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step5-h">Chatbot de Filtrado IA</h3>
+                            <p data-i18n="step5-p">El chatbot final califica al lead y agenda la reunión directamente en
+                                tu calendario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRATIONS SECTION -->
+        <section class="integrations-section">
+            <div class="container text-center">
+                <h3 class="integrations-title" data-i18n="integrations-title">Integraciones de Élite</h3>
+                <div class="integrations-grid">
+                    <div class="integration-item">Airtable</div>
+                    <div class="integration-item">Make</div>
+                    <div class="integration-item">Meta Ads</div>
+                    <div class="integration-item">WhatsApp API</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="precios" class="pricing-section">
+            <div class="container text-center">
+                <h2 class="section-title" data-i18n="pricing-title">Inversión con Retorno</h2>
+                <div class="pricing-card premium">
+                    <h3 data-i18n="price-plan-name">Plan Indomable</h3>
+                    <div class="price">300€ <span class="freq">/ mes</span></div>
+                    <p class="ads-info" data-i18n="price-ads-info">+ Inversión en Ads aparte</p>
+                    <ul class="features">
+                        <li data-i18n="feat1">Estudio de Mercado Completo</li>
+                        <li data-i18n="feat2">Producción Audiovisual Persuasiva</li>
+                        <li data-i18n="feat3">Gestión de Campañas Meta</li>
+                        <li data-i18n="feat4">Integración de Embudo de Venta</li>
+                        <li data-i18n="feat5">Soporte Premium 24/7</li>
+                    </ul>
+                    <button class="btn btn-primary large open-form" data-i18n="price-cta">Empezar Ahora</button>
+                    <p class="support-premium-badge" data-i18n="support-badge">Soporte Premium Activado</p>
+                </div>
+                <p class="ai-disclosure" data-i18n="ai-disclosure">Transparencia: Sistema operado íntegramente por
+                    Agentes de IA.</p>
+            </div>
+        </section>
+
+        <!-- [NEW] FAQ SECTION -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="faq-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq-q1">¿Es la IA segura para mi marca?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq-a1">Absolutamente. Configuramos barandillas éticas y de tono de marca para
+                                que la IA nunca diga nada fuera de lugar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq-q2">¿Cuánto tardo en ver resultados?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq-a2">Desde el primer día. Una vez lanzamos las campañas y activamos el
+                                agente, empezarás a recibir leads calificados de inmediato.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq-q3">¿Tengo que saber programar?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq-a3">No. Nosotros nos encargamos de toda la configuración técnica y la
+                                integración. Tú solo recibes las reuniones en tu calendario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LEAD FORM MODAL -->
+    <div id="lead-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="modal-title">Escala tu negocio hoy</h2>
+            <form id="lead-form">
+                <div class="form-group">
+                    <label for="name" data-i18n="form-name">Nombre</label>
+                    <input type="text" id="name" required placeholder="Tu nombre...">
+                </div>
+                <div class="form-group">
+                    <label for="company" data-i18n="form-company">Nombre de Empresa</label>
+                    <input type="text" id="company" required placeholder="Nombre legal o comercial...">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp" data-i18n="form-whatsapp">WhatsApp</label>
+                    <div class="tel-group">
+                        <select id="country-prefix" class="country-prefix">
+                            <option value="+34">🇪🇸 +34</option>
+                            <option value="+1">🇺🇸 +1</option>
+                            <option value="+52">🇲🇽 +52</option>
+                            <option value="+54">🇦🇷 +54</option>
+                            <option value="+57">🇨🇴 +57</option>
+                        </select>
+                        <input type="tel" id="whatsapp" required placeholder="600 000 000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="form-email">Gmail / Email</label>
+                    <input type="email" id="email" required placeholder="tu@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="service" data-i18n="form-service">Servicio / Producto</label>
+                    <input type="text" id="service" required placeholder="¿Qué vendes?">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="sales-team">
+                    <label for="sales-team" data-i18n="form-team">¿Tienes equipo comercial?</label>
+                </div>
+                <button type="submit" class="btn btn-primary full-width" data-i18n="form-submit"
+                    style="margin-top: 20px;">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p data-i18n="footer-text">&copy; 2026 Indomable. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
