@@ -886,3 +886,5 @@ body {
     }
 }
 @media (max-width: 768px) { .hero-image-container { display: none !important; } }
+
+.integration-logo { width: 24px; height: 24px; margin-right: 12px; vertical-align: middle; filter: brightness(1.2); } .success-item { display: flex; align-items: center; justify-content: center; }
